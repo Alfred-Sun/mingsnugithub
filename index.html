@@ -1,0 +1,208 @@
+﻿<!doctype html>  
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8">
+		
+		<title>Welcome to DreamHunter's homepage!</title>
+
+		<meta name="description" content="A three dimensional and space efficient menu created with JavaScript and CSS 3.">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="viewport" content="width=800, user-scalable=no">
+		
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+		
+		<link rel="stylesheet" href="css/style.css">
+		<script type="text/javascript">
+			function show(x) {
+				var menu = ["Home", "Vitae", "Links"];
+				for(var i=0; i< menu.length; i++){
+					var OtherObj=document.getElementById(menu[i]);
+					OtherObj.style.display = "none";
+					}
+				var SelectedObj=document.getElementById(x);				
+				SelectedObj.style.display = "block";
+			}
+		</script>
+	</head>
+	
+	<body>
+
+		<div class="meny">
+			<!-- <h2>More Experiments</h2> -->
+			<img src="images/logo.png" alt="DreamHunter">
+			<ul>
+				<li><a href="#home" onClick="show('Home')">Home</a></li>
+				<li><a href="#Vitae" onClick="show('Vitae')">Vitae</a></li>
+				<li><a href="http://dreamhunter.me/cn">Chinese Blog</a></li>
+				<li><a href="http://dreamhunter.me/en">English Blog</a></li>
+				<li><a href="#Links" onClick="show('Links')">Links</a></li>
+			</ul>
+		</div>
+
+		<div class="meny-arrow">
+		</div>
+
+		<div class="contents">
+		<!--************************************HOME Page*******************************-->
+			<div id="Home">
+				<article>				
+					<h1>Weicheng Zhu</h1>
+					<img src="images/avatar.jpg" alt="My Photo">
+					<p>Hi! I graduated from Chuang-Ang University with an MSc in Statistics.
+					 I'm now working in the Technical Support Dept. of <a href="http://www.spss.co.kr">SPSS Korea</a>. </p>
+					<p>I love programming and I am interested in all kinds of computer technologies. I dream to be a super computer geek one day:D
+					<p>I enjoy my life. I'm good at magic, cooking, photography. And I'm honoured to
+						meet my girlfriend Meiling, who always support me and give me a lot of courage. </p>
+				</article>
+			</div>
+
+			
+		<!--************************************RESUME Page*******************************-->
+			<div id="Vitae" style="display:none">
+			<div class="resume-wrapper">
+				<div class="resume-left-sidebar float-left">
+				<div class="resume-item">
+					<img class="float-left icon" src="images/briefcase.png" alt="">
+					<h1 class="resume-head">Work Experience</h1>						
+					<p class="clearfix resume-content">2012 - PRESENT</p>
+					<p class="clearfix resume-content">Staff member - SPSS Korea</p>
+				</div>
+
+				<div class="resume-item">
+					<img class="float-left icon" src="images/books.png" alt="">
+					<h1 class="resume-head">Education</h1>
+					<p class="clearfix resume-content">2010 - 2012</p>
+					<p class="clearfix resume-content">Chung-Ang University, Korea - Master of Science in Statistics</p>
+					<p class="clearfix resume-content">2006 - 2010</p>
+					<p class="clearfix resume-content">Ludong University, China - Bachelor of Science in Statistics</p>
+				</div>
+				
+				<div class="resume-item">
+						<img class="float-left icon" src="images/skills.png" alt="">
+						<h1 class="resume-head">Extracurricular Activites</h1>
+						<p class="clearfix resume-content"><a href = "Rstudy">R Tutorial Class</a> in Chung-Ang University -- 2012 </p>
+						<p  class="clearfix resume-content">Translated chapter 3, 4 of ggplot2(Hadley Wickham) into Chinese -- 2012</p>
+						<p  class="clearfix resume-content">Participated in the ANQ Congress in Hong Kong -- 2012</p>
+						<p  class="clearfix resume-content">Oral Presentation at the Spring Student Essay Conference in Andong University -- 2011</p>
+						<p  class="clearfix resume-content">Assistant in the SPSS workshop CAU -- 2011</p>
+						<p  class="clearfix resume-content">The moderator of R software in <a href="http:://cos.name/cn">COS forum</a>  -- 2010-Present</p>
+				</div>
+				</div>
+				<div class="resume-right-sidebar float-right">
+				<div class="resume-item">
+					<img class="float-left icon" src="images/computer.png" alt="">
+					<h1 class="resume-head">Computer Skills</h1>
+					<p class="clearfix resume-content">Linux</p>
+					<p class="clearfix resume-content">R</p>
+					<p class="clearfix resume-content">Python/wxPython</p>
+					<p class="clearfix resume-content">C++</p>
+					<p class="clearfix resume-content">JAVA</p>					
+					<p class="clearfix resume-content">HTML/CSS</p>
+					<p class="clearfix resume-content">ASP/ASP.NET</p>
+				</div>
+					
+				<div class="resume-item">
+					<img class="float-left icon" src="images/language.png" alt="">
+					<h1 class="resume-head">Language Ability</h1>
+					<p class="clearfix resume-content">Chinese</p>
+					<p class="clearfix resume-content">English</p>
+					<p class="clearfix resume-content">Korean</p>
+				</div>
+				</br>
+				<center>
+				<a href = "doc/WeichengZhu_CV.pdf" ><button id="submit" style="width:100px">Download CV</button></a>
+				</center>
+				</div>
+				</div>
+			</div>				
+	
+		<!--************************************Projects Page*******************************
+			<div id="Projects" style="display:none">
+				<h1>
+					Projects
+				</h1>
+				<ul>
+					<li><a href="projects/Rstudy">R tutorial class</a>  -- May 2012</li>
+				</ul>				
+			</div>	
+-->
+		<!--************************************Links Page*******************************-->
+			<div id="Links" style="display:none">
+				<h1>
+					Links I Like
+				</h1>
+				<h2>Personal website</h2>
+				<ul>
+					<li><a href="http://yihui.name">Yihui Xie</a>: My idol</li>
+					<li><a href="http://www.bjt.name/">Sijie Liu</a>: @贝吉塔行星</li>
+					<li><a href="http://yixuan.cos.name/cn">Yixuan Qiu</a>: 怡然轩</li>
+					<li><a href="http://www.road2stat.com/">Nan Xiao</a>: A Geek</li>
+					<li><a href="http://www.loyhome.com/">Liyun Chen</a>: 落园</li>
+					<li><a href="http://yanping.me/">Yanping Chen</a>: 雁起平沙</li>
+					<li><a href="http://xccds1977.blogspot.kr/">Data Science and R</a></li>						
+				</ul>
+				<h2>Statistics</h2>
+				<ul>
+					<li><a href="http://cos.name">COS</a>: Statistics website pioneer of China</li>
+					<li><a href="http://cos.name/cn">COS Forum</a>: A good place to learn statistics</li>								
+				</ul>				
+			</div>				
+		<!--************************************Sharing Page*******************************-->			
+<!-- 			<div class="sharing">
+				<a href="http://twitter.com/share" class="twitter-share-button" data-text="Meny - a three dimensional and space efficient menu concept by @hakimel" data-url="http://lab.hakim.se/meny" data-count="small" data-related="hakimel"></a>
+				
+				<iframe id="facebook-button" src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Flab.hakim.se%2Fmeny%2F&layout=button_count&show_faces=false&width=83&action=like&font=arial&colorscheme=light&height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:85px; height:24px; position: relative; top: 4px;" allowTransparency="true"></iframe> 
+			</div>
+
+			<a href="https://github.com/hakimel/meny"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://a248.e.akamai.net/camo.github.com/e6bef7a091f5f3138b8cd40bc3e114258dd68ddf/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub"></a>
+		</div> -->
+		
+
+
+		<script src="js/meny.min.js"></script>
+		<script>
+			// Create an instance of Meny
+			var meny = Meny.create({
+				// The element that will be animated in from off screen
+				menuElement: document.querySelector( '.meny' ),
+
+				// The contents that gets pushed aside while Meny is active
+				contentsElement: document.querySelector( '.contents' ),
+
+				// [optional] The alignment of the menu (top/right/bottom/left)
+				position: Meny.getQuery().p || 'left',
+
+				// [optional] The height of the menu (when using top/bottom position)
+				height: 200,
+
+				// [optional] The width of the menu (when using left/right position)
+				width: 260,
+
+				// [optional] Distance from mouse (in pixels) when menu should open
+				threshold: 40
+			});
+
+			// API Methods:
+			// meny.open();
+			// meny.close();
+			// meny.isOpen();
+			
+			// Events:
+			// meny.addEventListener( 'open', function(){ console.log( 'open' ); } );
+			// meny.addEventListener( 'close', function(){ console.log( 'close' ); } );
+
+			// Embed an iframe if a URL is passed in
+			if( Meny.getQuery().u && Meny.getQuery().u.match( /^http/gi ) ) {
+				var contents = document.querySelector( '.contents' );
+				contents.style.padding = '0px';
+				contents.innerHTML = '<div class="cover"></div><iframe src="'+ Meny.getQuery().u +'" style="width: 100%; height: 100%; border: 0; position: absolute;"></iframe>';
+			}
+		</script>
+
+		<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+
+	</body>
+</html>
